@@ -1,11 +1,11 @@
-redis:
-  database: 0
-  host: localhost
-  port: 6379
-  timeout: 6000ms
-  jedis:
-    pool:
-      max-active: 200
-      max-wait: -1ms
-      max-idle: 10
-      min-idle: 0
+  redis:
+    database: ${redis.database}
+    host: ${redis.host}
+    port: ${redis.port}
+    timeout: ${redis.timeout}
+    jedis:
+      pool:
+        max-active: ${redis.jedis.pool.max-active}
+        max-wait: ${redis.jedis.pool.max-wait}
+        max-idle: ${redis.jedis.pool.max-idle}
+        min-idle: ${redis.jedis.pool.min-idle}
