@@ -1,6 +1,4 @@
-spring:
-  application:
-    name: tb-feign
+
   redis:
     database: 0
     host: localhost
